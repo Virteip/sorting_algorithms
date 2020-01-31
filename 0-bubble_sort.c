@@ -1,8 +1,9 @@
 #include "sort.h"
 /**
- * insertion_sort_list - 
- *
- * Return: Always 0
+ * insertion_sort_list - sort an array of integers
+ * @array: array to be sorted
+ * @size: size of the array to sort
+ * Return: no return just print array
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -24,7 +25,14 @@ void bubble_sort(int *array, size_t size)
 	      sorted = 0;
 	      for(j  = 0; j <= size-1; j++)
 		{
-		  printf("%d ", array[j]);
+		  if (j == size-1)
+		    {
+		      printf("%d", array[j]);
+		    }
+		  else
+		    {
+		      printf("%d, ", array[j]);
+		    }
 		}
 	      putchar('\n');
 	    }
