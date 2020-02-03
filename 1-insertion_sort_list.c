@@ -12,9 +12,8 @@ void insertion_sort_list(listint_t **list)
   listint_t *present, *owner, *node_owner;
   int tmp;
 
-  if (list != NULL || *list != NULL || (*list)->next != NULL)
+  if (list == NULL || *list == NULL || (*list)->next == NULL)
     return;
-
   present = (*list)->next;
   while (present != NULL)
     {
@@ -37,10 +36,13 @@ void insertion_sort_list(listint_t **list)
               if (owner->prev == NULL)
                 *list = owner;
               print_list(*list);
+
             }
           if (tmp == 0)
-            owner = owner->prev;
+            owner= owner->prev;
+
         }
       present = present->next;
+
     }
 }
