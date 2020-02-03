@@ -9,7 +9,7 @@ void selection_sort(int *array, size_t size)
 {
 size_t i, j, temp, save;
 
-if (array && size)
+if (size > 1)
 {
 for (i = 0; i < size-1; i++)
 {
