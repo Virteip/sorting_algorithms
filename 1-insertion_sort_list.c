@@ -5,7 +5,7 @@
  * @list: double pointer
  *
  * Return: None
- **/
+ */
 
 void insertion_sort_list(listint_t **list)
 {
