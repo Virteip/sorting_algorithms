@@ -4,12 +4,13 @@
  * insertion_sort_list - Sort algorithm
  * @list: double pointer
  *
- * Return: None
  */
 
 void insertion_sort_list(listint_t **list)
 {
-listint_t *present, *owner, *node_owner;
+listint_t *present;
+listint_t *owner;
+listint_t *node_owner;
 int tmp;
 
 if (list == NULL || *list == NULL || (*list)->next == NULL)
